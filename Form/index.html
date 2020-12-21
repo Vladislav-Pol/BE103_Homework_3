@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Polonik Vladislav">
+	<title>Homework_3 Form</title>
+</head>
+
+<body>
+	<form>
+		<fieldset>
+			<legend>Общая информация</legend>
+			<div class="field">Фамилия
+				<input required type="text" name="surname">
+			</div>
+			<div class="field">Имя
+				<input required type="text" name="name">
+			</div>
+			<div class="field">Отчество
+				<input type="text"  name="patronymic">
+			</div>
+			<div class="field">Дата рождения
+				<input required type="date" name="birthday">
+			</div>
+			<div class="field">Пол
+				<select name="gender">
+					<option disabled selected></option>
+					<option>Мужской</option>
+					<option>Женский</option>
+				</select>
+			</div>
+			<div class="field">Фото
+				<input type="file" name="foto">
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Контактная информация</legend>
+			<div class="field">Телефон
+				<input required type="tel" name="phone">
+			</div>
+			<div class="field">Электронная почта
+				<input type="email" name="email">
+			</div>
+			<div class="field">Адрес проживания
+				<input type="text" name="address">
+			</div>
+			<div class="field">Город проживания
+				<select>
+					<option selected disabled></option>
+					<option>Брест</option>
+					<option>Витебск</option>
+					<option>Гомель</option>
+					<option>Гродно</option>
+					<option>Могилев</option>
+					<option>Минск</option>
+				</select>
+			</div>
+		</fieldset>
+	</form>
+</body>
+
+</html>
