@@ -10,100 +10,106 @@
 </head>
 
 <body>
-	<!-- <img class="main_image" src="http://bco.by/wp-content/uploads/2015/03/1-1140x500.jpg" alt="Иллюстрация"> -->
 	<div class="title">
 		<h1>Заполните анкету</h1>
 	</div>
 	<form>
-		<fieldset>
-			<legend>Общая информация</legend>
-			<div class="field">Фамилия
-				<input maxlenght=25 placeholder="Ivanov" required type="text" name="surname">
-			</div>
-			<div class="field">Имя
-				<input maxlenght=25 placeholder="Ivan" required type="text" name="name">
-			</div>
-			<div class="field">Отчество
-				<input maxlenght=25 placeholder="Ivanovich" type="text" name="patronymic">
-			</div>
-			<div class="field">Дата рождения
-				<input placeholder="дд.мм.гггг" required type="date" name="birthday">
-			</div>
-			<div class="field">Пол
-				<input type="radio" name="gender">-Мужской<br />
-				<input type="radio" name="gender">Женский<br />
-			</div>
-			<div class="field">Фото
-				<input type="file" name="foto">
-			</div>
-		</fieldset>
-		<fieldset>
-			<legend>Контактная информация</legend>
-			<div class="field">Телефон
-				<input placeholder="+375 29 1111111" required type="tel" name="phone">
-			</div>
-			<div class="field">Электронная почта
-				<input placeholder="name@gmail.com" type="email" name="email">
-			</div>
-			<div class="field">Адрес проживания
-				<input placeholder="ул.Мирошниченко, 15" type="text" name="address">
-			</div>
-			<div class="field">Город проживания
-				<select>
-					<option selected disabled></option>
-					<option>Брест</option>
-					<option>Витебск</option>
-					<option>Гомель</option>
-					<option>Гродно</option>
-					<option>Могилев</option>
-					<option>Минск</option>
-				</select>
-			</div>
-		</fieldset>
-		<fieldset>
-			<legend>Образование (наименование учреждений)</legend>
-			<div class="field">Высшее
-				<input placeholder="БГУ" type="text" name="higher">
-			</div>
-			<div class="field">Среднее
-				<input placeholder="Колледж" type="text" name="secondary">
-			</div>
-			<div class="field">Дополнительное
-				<input placeholder="программа переподготовки..." type="text" name="additional">
-			</div>
-			<div class="field">Курсы
-				<input placeholder="Backend programming" type="text" name="courses">
-			</div>
-		</fieldset>
-		<fieldset>
-			<legend>Карьера (в порядке убывания)</legend>
-			<div class="field">Место работы 1
-				<input placeholder="ООО &quot;Место работы&quot;" type="text" name="work_1">
-				<span>Дата начала работы</span>
-				<input placeholder="дд.мм.гггг" type="date" name="work_1_date_start">
-				<span>Дата окончания работы</span>
-				<input placeholder="дд.мм.гггг" type="date" name="work_1_date_stop">
-			</div>
-			<div class="field">Место работы 2
-				<input placeholder="ООО &quot;Место работы&quot;" type="text" name="work_2">
-				<span>Дата начала работы</span>
-				<input placeholder="дд.мм.гггг" type="date" name="work_2_date_start">
-				<span>Дата окончания работы</span>
-				<input placeholder="дд.мм.гггг" type="date" name="work_2_date_stop">
-			</div>
-			<div class="field">Место работы 3
-				<input placeholder="ООО &quot;Место работы&quot;" type="text" name="work_3">
-				<span>Дата начала работы</span>
-				<input placeholder="дд.мм.гггг" type="date" name="work_3_date_start">
-				<span>Дата окончания работы</span>
-				<input placeholder="дд.мм.гггг" type="date" name="work_3_date_stop">
-			</div>
-		</fieldset>
-		<fieldset>
-			<div class="field">О себе
-				<textarea placeholder="Мои ключевые навыки..." name="about_me"></textarea>
-			</div>
-		</fieldset>
+		<div class="col">
+			<fieldset>
+				<legend>Общая информация</legend>
+				<div class="field"><p>Фамилия</p>
+					<input type="text" maxlength="25" placeholder="Ivanov" required name="surname">
+				</div>
+				<div class="field"><p>Имя</p>
+					<input placeholder="Ivan" required type="text" name="name" maxlength=25>
+				</div>
+				<div class="field"><p>Отчество</p>
+					<input placeholder="Ivanovich" type="text" name="patronymic" maxlength=25>
+				</div>
+				<div class="field"><p>Дата рождения</p>
+					<input required type="date" name="birthday">
+				</div>
+				<div id="gender" class="field"><p>Пол</p>
+					<input type="radio" name="gender">Мужской<br />
+					<input id="secondrow" type="radio" name="gender">Женский<br />
+				</div>
+				<div class="field"><p>Фото</p>
+					<input id="file" type="file" name="foto">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Контактная информация</legend>
+				<div class="field"><p>Телефон</p>
+					<input placeholder="+375 29 1111111" required type="tel" name="phone" autocomplete>
+				</div>
+				<div class="field"><p>Электронная почта</p>
+					<input placeholder="name@gmail.com" type="email" name="email">
+				</div>
+				<div class="field"><p>Адрес проживания</p>
+					<input placeholder="ул.Мирошниченко, 15" type="text" name="address">
+				</div>
+				<div class="field"><p>Город проживания</p>
+					<select>
+						<option selected disabled>Выберите город</option>
+						<option>Брест</option>
+						<option>Витебск</option>
+						<option>Гомель</option>
+						<option>Гродно</option>
+						<option>Могилев</option>
+						<option>Минск</option>
+					</select>
+				</div>
+			</fieldset>
+		</div><!-- 
+	 --><div class="col">	
+			<fieldset>
+				<legend>Образование (наименование учреждений)</legend>
+				<div class="field"><p>Высшее</p>
+					<input placeholder="ВУЗ" type="text" name="higher">
+				</div>
+				<div class="field"><p>Среднее</p>
+					<input placeholder="Колледж" type="text" name="secondary">
+				</div>
+				<div class="field"><p>Дополнительное</p>
+					<input placeholder="программа переподготовки..." type="text" name="additional">
+				</div>
+				<div class="field"><p>Курсы</p>
+					<input placeholder="Backend programming" type="text" name="courses">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Карьера (в порядке убывания)</legend>
+				<div class="field"><p>Место работы 1</p>
+					<input placeholder="ООО &quot;Место работы&quot;" type="text" name="work_1">
+					<p>Дата начала работы</p>
+					<input type="date" name="work_1_date_start">
+					<p>Дата окончания работы</p>
+					<input type="date" name="work_1_date_stop">
+				</div>
+				<div class="field"><p>Место работы 2</p>
+					<input placeholder="ООО &quot;Место работы&quot;" type="text" name="work_2">
+					<p>Дата начала работы</p>
+					<input type="date" name="work_2_date_start">
+					<p>Дата окончания работы</p>
+					<input type="date" name="work_2_date_stop">
+				</div>
+				<div class="field"><p>Место работы 3</p>
+					<input placeholder="ООО &quot;Место работы&quot;" type="text" name="work_3">
+					<p>Дата начала работы</p>
+					<input type="date" name="work_3_date_start">
+					<p>Дата окончания работы</p>
+					<input type="date" name="work_3_date_stop">
+				</div>
+			</fieldset>
+		</div>
+		<div id="about_me">
+			<fieldset>
+				<legend>О себе</legend>
+				<div class="field">
+					<textarea placeholder="Мои ключевые навыки..." name="about_me"></textarea>
+				</div>
+			</fieldset>
+		</div>
 		<button type="submit">Отправить</button>
 		<button type="reset">Очистьть</button>
 	</form>

@@ -9,30 +9,53 @@ body{
 	background-image: url(http://bco.by/wp-content/uploads/2015/03/1-1140x500.jpg);
 	background-attachment: fixed;
 	background-size: cover;
-	margin: 0;
+	max-width: 900px;
+	margin: auto;
+	font-family: sans-serif;
 }
 .field:not(:last-child){
 	margin-bottom: 15px;
 }
-fieldset{
-	width: 50%;
-	margin: 0;
-	display: inline;
-}
 h1{
 	width: 100%;
-	
 }
-.main_image, form{
-	width: 49%;
-	display: inline;
-	margin: 0;
-}
-.main_image{
+.col{
+	display: inline-block;
+	width: 50%;
+	min-width: 300px;
 	vertical-align: top;
 }
-.title{
-	width: 49%;
-	height: 100%;
-	display: inline;
+fieldset{
+	background-color: rgba(245,245,245,0.6);
+}
+input, select{
+	margin-left: 15%;
+}
+#secondrow{
+	margin-left: calc(45% + 5px);
+}
+p{
+	display: inline-block;
+	width: 30%;
+	margin: 0;
+}
+#gender{
+	margin-bottom: 0;
+}
+#file{
+	display: block;
+	margin-left: 0;
+}
+textarea{
+	width: 100%;
+	height: 5em;
+}
+legend{
+	font-size: large;
+}
+#about_me{
+	margin-bottom: 10px;
+}
+form{
+	margin-bottom: 10px;
 }
